@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Clientpage</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="logincs.css" type="text/css" media="screen">
+	
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js"></script>
+	<!--	<script type="text/javascript" src="../js/saljs.js"></script> -->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/clientpagejs.js"></script>
+		
+		<script type="text/javascript" src="../js/logout.js"></script>
+		
+
+</head>
+<body  >
+	
+	
+	<header class="headmain">
+	
+		<h1><img src="log2.png" alt="logo" id="imglogo" ></h1>
+		
+		<nav id="nav">
+
+			<ul id="navigation">
+
+				<li><a href="../final.index.html">Home</a></li>
+
+			
+				<li><a href="../gallary/gallary.html">Gallery &raquo;</a>
+
+					<ul>
+
+						<li><a href="../gallary/gallary.html">Painting </a></li>
+
+						<li><a href="../gallary/gallary.html">Photography</a></li>
+
+						<li><a href="../gallary/gallary.html">Patina &raquo;</a>
+							<ul>
+
+									<li><a href="../gallary/gallary.html">Mural painting</a></li>
+								   
+									<li><a href="../gallary/gallary.html">Sculpture</a></li>
+
+									
+							</ul>     
+						</li>
+										 
+
+					</ul>             
+
+				</li>
+
+				<li><a href="../gallary/sale.html">Sale</a></li>
+
+				<li><a href="../contact/about.html">About</a></li>
+
+				<li><a href="http://patinehart.blogsky.com/1392/01" target="_blank" onclick="alertblog();">Blog</a></li>
+
+				<li><a href="../contact/contact.html">Contact</a></li>
+				<li><a href="../search/search.html">Search</a></li>
+				
+				<li><a href="#" onclick="logout();">Log out</a></li>
+
+			</ul>
+
+	</nav>
+
+	
+	</header>
+
+	
+
+	<section>
+		
+		
+			
+			<form name="form1" id="form-pay" action="demo_form1.asp" method="post">	
+				<fieldset>
+					<legend>SHOPPING CART</legend>
+						
+							
+									Your Number of item 
+							
+									&emsp;&emsp;&emsp;&emsp;<label id="numberitem"></label> <br/><br/>
+						
+									Your purchase 
+							
+									&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ <label id="totalamount"></label> <br/>
+									<input type="button" value="Proceed" id="proceed" onclick="proceedshow();"/>
+				<p id="showinfo" >
+									GST
+								
+									&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ <label id="hsttax"></label> <br/>
+							
+									QST
+							
+									&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ <label id="qsttax"></label> <br/>
+							
+									TOTAL 
+								
+									&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ <label id="totalincludetax"></label> 
+							
+						<br/><br/>
+					
+						Client Name <input type="text"   name="clientname" id="clientname" 
+							pattern="[a-z]{2,25}$" required><br/><br/>
+						Date Of Birth <input type="date"  name="date"  id="birthdate" required><br/><br/>
+						Email Address <input type="email"  value="Enter your Email" name="mail" id="mailclient"
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example: sahar_1231232@mail.com" required><br/><br/>
+						Payment  amount <input type="text" name="totalamount" id="totalincludetaxprint" readonly><br/><br/>
+						Credit card type
+								 <select name="cardtype" id="selectcard" >
+									<option value="Visa" id="visacard" onclick="showlable();">Visa </option>
+									<option value="mastercard" id="master" onclick="showlable();">Mastercard</option>
+									<option value="paypal" id="paypal" onclick="calcule_cash();">Cash</option>
+								  </select>
+										
+										<br/><br/>
+										
+						
+						<p id="afterselectcard"> 
+						Card number <input type="number"   name="cardnumber"  id="cardnumber"  
+							pattern="[0-9]{16}" title="16 number " required><br/><br/>
+						Expiration date <input type="month"  name="expire"  id="expire" required><br/><br/>
+						Card security code<input type="number"   name="securitynumber"  id="securitynumber" pattern="[0-9]{3}" 
+						title="Three number code" required><br/><br/>
+						Name appearing on the card<input type="text"   name="nameoncard" id="nameoncard" required></p><br/>
+						<!--pay by cash-->
+						<p  id="cash">
+							 
+							<label>Calculate cash:</label>
+							<p id="100d"><span id="100t"></span><img id="100i" src="../Canada/100.jpg" width="150"></p>
+							<p id="50d"><span id="50t"></span><img id="50i"  src="../Canada/50.jpg" width="150"></p>
+
+						</p><br/><br/>
+						
+						
+						
+						
+						 <input type="button" value="Pay Now" id="purchas" onclick="thanks();"/>
+						 <input type="button" value="Cancel" id="cancel"/>
+					</p> 
+				
+				</fieldset>
+			</form>
+			<figure>
+				<img src="../img/painting/6.jpg" alt="pic" id="imginsideclient">
+			</figure>
+		
+		
+		
+		
+	</section>
+
+	
+		<footer >
+			 		 
+				Copyright &copy; Maryam Nikbakht 2016 All Rights Reserved
+				<p id="demo"></p> <script> document.getElementById("demo").innerHTML = Date(); </script>
+			 
+		</footer>
+
+	
+	
+	
+</body>
+</html>

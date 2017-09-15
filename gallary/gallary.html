@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Final project- Gallary</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="gallarycs.css" type="text/css" media="screen">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js"></script>
+	<script type="text/javascript" src="../js/gallaryjs.js"></script> 
+	<script type="text/javascript" src="../js/logout.js"></script>
+	
+	
+	<script>
+		  $(document).ready(function(){
+					
+				var boo = Cookies.get('nameuser');
+				if(boo != "" && boo != null)
+				{
+					$("#showsale").onload =$("#showsale").show();
+					$("#showlogin").onload =$("#showlogin").hide();
+					$("#showlogout").onload =$("#showlogout").show();
+					
+				}
+				else{
+					$("#showsale").onload =$("#showsale").hide();
+					$("#showlogout").onload =$("#showlogout").hide();
+					$("#showlogin").onload =$("#showlogin").show();
+				}
+			 });
+	
+		function OnclickImg(){
+			// Get the modal
+				var modal = document.getElementById('myModal');
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById('myImg');
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+				}
+			
+				// Get the <span> element that closes the modal
+			
+				var span = document.getElementsByClassName("close")[0];
+			
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				modal.style.display = "none";
+				}
+			}	
+			
+	</script>
+
+</head>
+<body>
+	
+	
+	<header class="headmain">
+	
+		<h1><img src="../log2.png" alt="logo" id="imglogo" ></h1>
+		
+		<nav id="nav">
+
+			<ul id="navigation">
+
+				<li><a href="../final.index.html">Home</a></li>
+
+			
+				<li><a href="#">Gallery &raquo;</a>
+
+					<ul>
+
+						<li><a href="#">Painting </a></li>
+
+						<li><a href="#">Photography</a></li>
+
+						<li><a href="#Patina">Patina &raquo;</a>
+							<ul>
+
+									<li><a href="#">Mural painting</a></li>
+								   
+									<li><a href="#">Sculpture</a></li>
+
+								
+							</ul>     
+						</li>
+						
+					 
+
+					</ul>             
+
+				</li>
+				
+				<li id="showsale"><a href="sale.html">Sale</a></li>
+				<li><a href="../contact/about.html">About</a></li>
+
+				<li><a href="http://patinehart.blogsky.com/1392/01" target="_blank" onclick="alertblog();">Blog</a></li>
+
+				<li><a href="../contact/contact.html">Contact</a></li>
+				<li><a href="../search/search.html">Search</a></li>
+				
+				<li id="showlogin"><a href="../login/login.html">Login</a></li>
+				<li id="showlogout"><a href="#" onclick="logout();">Log out</a></li>
+
+			</ul>
+
+	</nav>
+
+	
+	</header>
+
+	
+
+	<section>
+	
+	<div id="mappingsubject">
+		<img id="mapping"  src="../img/mapping.jpg" alt="mapping" caption="Mapping" usemap="#mapping"/><br/>
+		Mapping
+			<map name="mapping">
+				 <area shape="rect" coords="0,0,149,192" 
+					href="#painting" alt="painting" />
+				 <area shape="rect" coords="150,0,290,192" 
+					href="#mural" alt="mural painting" />
+				 <area shape="rect" coords="291,0,420,192" 
+					href="#Photography" alt="photography" />
+				<area shape="rect" coords="422,0,551,192" 
+					href="#patina" alt="patina" />
+							
+			</map>
+	</div>
+		
+	<div id="painting">
+	
+		<a name="painting">
+			<h2 class="subject" id="test">Painting</h2></a>
+		<div id="row1">	
+			<div >
+				<img src="../img/painting/inside1.jpg" id="myImg"  alt="Pastel Painting, 50*70cm " onclick="OnclickImg();" class="row11">
+				<!-- The Modal -->
+					<div id="myModal" class="modal" >
+					  <span class="close" >×</span>
+					  <img class="modal-content" id="img01"  src="../img/painting/inside1.jpg" alt="mary"/>
+					  <h4 id="caption" ></h4>
+					</div>
+						
+					
+					
+					
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait1- Pastel Painting - 50*70
+				</h4>
+								
+			</div>
+			<div>
+				<img src="../img/painting/paint1.jpg" id="myImg2"  alt="Pastel Painting, 50*70cm"  class="row11" onclick="OnclickImg();">
+				<!-- The Modal -->
+					<div id="myModal2" class="modal" >
+					  <span class="close" >×</span>
+					  <img class="modal-content" id="img02"  src="../img/painting/inside1.jpg" alt="mary"/>
+					  <h4 id="caption2" ></h4>
+					</div>
+					
+				<script>
+					function OnclickImg(){
+						// Get the modal
+							var modal = document.getElementById('myModal2');
+
+							// Get the image and insert it inside the modal - use its "alt" text as a caption
+							var img = document.getElementById('myImg2');
+							var modalImg = document.getElementById("img02");
+							var captionText = document.getElementById("caption2");
+							img.onclick = function(){
+							modal.style.display = "block";
+							modalImg.src = this.src;
+							modalImg.alt = this.alt;
+							captionText.innerHTML = this.alt;
+							}
+						
+							// Get the <span> element that closes the modal
+						
+							var span = document.getElementsByClassName("close")[0];
+						
+							// When the user clicks on <span> (x), close the modal
+							span.onclick = function() { 
+							modal.style.display = "none";
+							}
+						}	
+			
+				</script>	
+					
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait2- Pastel Painting - 50*70
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/painting/paint3.jpg" alt="3" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait-Collag1-Oil Painting - 100*70
+				</h4>
+							
+				
+			</div>
+			<div >
+				<img src="../img/painting/paint4.png" alt="4"  class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jesus- Pastel Painting - 50*70
+				</h4>
+								
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="row2">	
+			<div>
+				<img src="../img/painting/paint2.jpg" alt="5" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oil Painting - 50*70
+				</h4>
+				
+				
+			</div>
+			<div>
+				<img src="../img/painting/paint6.png" alt="6"  class="row12">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pastel Painting - 50*70
+				</h4>
+				
+				
+			</div>
+			<div >
+				<img src="../img/painting/paint7.jpg" alt="7"  class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait-Collag - Oil Painting - 100*70
+				</h4>
+								
+				
+			</div>
+			<div >
+				<img src="../img/painting/6.jpg" alt="8"  class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shahname - Pastel Painting - 50*70
+				</h4>
+				
+				
+				
+			</div>
+		</div>
+		
+				
+	</div>		
+		
+	<!--  Patina  -->
+	<!--  Patina  -->
+	<!--  Patina  -->
+	<!--  Patina  -->	
+		
+	<div id="patina">
+		<a name="patina">
+		<h3 class="subject">Patina</h3></a>
+		<div id="row3">	
+			<div>
+				<img src="../img/scul/ang2.jpg" alt="pat1" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina1 - Sculpture 20*40cm
+				</h4>
+				
+				
+			</div>
+			<div>
+				<img src="../img/scul/boronz.jpg" alt="pat2" class="row11">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina2 - Sculpture 20*40cm
+				</h4>
+				
+				
+			</div>
+			<div >
+				<img src="../img/scul/sofal.jpg" alt="pat3" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina3 - Sculpture 20*15cm
+				</h4>
+				
+				
+				
+			</div>
+			<div >
+				<img src="../img/scul/jam.jpg" alt="pat4" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina4 - Sculpture 30*50cm
+				</h4>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="row4">	
+			<div>
+				<img src="../img/scul/ang1.jpg" alt="pat5" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina5 - Sculpture 20*30cm
+				</h4>
+				
+				
+			</div>
+			<div>
+				<img src="../img/scul/gav.jpg" alt="pat6"  class="row12">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina6 - Sculpture 40*20cm
+				</h4>
+				
+				
+			</div>
+			<div >
+				<img src="../img/scul/gavazn.jpg" alt="pat7" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina7 - Sculpture 20*30cm
+				</h4>
+				
+				
+				
+			</div>
+			<div >
+				<img src="../img/scul/sofal2.jpg" alt="pat8" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina8 - Sculpture 20*10cm
+				</h4>
+				
+				
+			</div>
+		</div>
+					
+	</div>
+	
+	<!--  Photography -->
+	<!--  Photography -->
+	<!--  Photography -->
+	
+	<div id="Photography">
+		<a name="Photography">
+		<h3 class="subject">Photography</h3></a>
+		<div id="row5">	
+			<div>
+				<img src="../img/pic/yazd1.jpg" alt="photo1" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yazd_Iran
+				</h4>
+				
+			</div>
+			<div>
+				<img src="../img/pic/yazd3.jpg" alt="photo2"  class="row11">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yazd_Iran
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/pic/bob.jpg" alt="photo2" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Man
+				</h4>
+						
+				
+			</div>
+			<div >
+				<img src="../img/pic/hafez2.jpg" alt="photo3" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hafez_Shiraz_Iran
+				</h4>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="row6">	
+			<div>
+				<img src="../img/pic/me.jpg" alt="photo4" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;33Pol_Isfahan
+				</h4>
+								
+			</div>
+			<div>
+				<img src="../img/pic/roshy.jpg" alt="photo5" class="row16">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Girl
+				</h4>
+				
+			</div>
+			<div >
+				<img src="../img/pic/sarbaz.jpg" alt="photo6" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Montreal
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/pic/quebec.jpg" alt="photo7" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quebec
+				</h4>
+				
+			</div>
+		</div>
+		
+		
+		<div class="row7">	
+			<div>
+				<img src="../img/pic/marpich.jpg" alt="photo8" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Montreal
+				</h4>
+								
+			</div>
+			<div>
+				<img src="../img/pic/dampay.jpg" alt="photo9" class="row16">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beach
+				</h4>
+				
+			</div>
+			<div >
+				<img src="../img/pic/church.jpg" alt="photo10" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Montreal
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/pic/spider.jpg" alt="photo11" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spider_Montreal
+				</h4>
+				
+			</div>
+		</div>
+		
+		<div class="row7">	
+			<div>
+				<img src="../img/pic/yazd4.jpg" alt="photo12" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iran-Yazd
+				</h4>
+				
+			</div>
+			<div>
+				<img src="../img/pic/hafez1.jpg" alt="photo13" class="row11">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Iran-Shiraz-Hafez
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/pic/tree.jpg" alt="photo14" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tree-Montreal
+				</h4>
+						
+				
+			</div>
+			<div >
+				<img src="../img/pic/yazd1.jpg" alt="photo15" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yazd_Iran
+				</h4>
+				
+			</div>
+		</div>
+	</div>	
+		
+		<!--  Mural Painting -->
+		<!--  Mural Painting -->
+		<!--  Mural Painting -->
+		<!--  Mural Painting -->
+	
+	<div id="mural">
+		<a name="mural">
+		<h3 class="subject">Mural Painting</h3></a>
+		<div id="row8">	
+			<div>
+				<img src="../img/mural/4.jpg" alt="photo16" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+			<div>
+				<img src="../img/mural/5.jpg" alt="photo17" class="row11">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/mural/10.jpg" alt="photo18" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+						
+				
+			</div>
+			<div >
+				<img src="../img/mural/7.jpg" alt="photo19"  class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="row9">	
+			<div>
+				<img src="../img/mural/6.jpg" alt="photo20" class="row19">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+								
+			</div>
+			<div>
+				<img src="../img/mural/12.jpg" alt="photo21" class="row19">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+			<div >
+				<img src="../img/mural/13.jpg" alt="photo22" class="row19">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/mural/21.jpg" alt="photo23" class="row19">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+		</div>
+		
+		
+		<div id="row10">	
+			<div>
+				<img src="../img/mural/1.jpg" alt="photo24" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+								
+			</div>
+			<div>
+				<img src="../img/mural/2.jpg" alt="photo25" class="row16">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+			<div >
+				<img src="../img/mural/3.jpg" alt="photo26" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/mural/9.jpg" alt="photo27" class="row16">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+		</div>
+		
+		<div id="row11last">	
+			<div>
+				<img src="../img/mural/14.jpg" alt="photo28" class="row11m">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+			<div>
+				<img src="../img/mural/22.jpg" alt="photo29" class="row11m">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+								
+			</div>
+			<div >
+				<img src="../img/mural/16.jpg" alt="photo30" class="row11m">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+						
+				
+			</div>
+			<div >
+				<img src="../img/mural/15.jpg" alt="photo31" class="row11m">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mural Painting
+				</h4>
+				
+			</div>
+		</div>
+		
+		
+		
+	</div>
+		
+		
+	</section>
+
+	
+		<footer>
+			 		 
+				Copyright &copy; Maryam Nikbakht 2016 All Rights Reserved
+				<p id="demo"></p> <script> document.getElementById("demo").innerHTML = Date(); </script>
+			 
+		</footer>
+
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,2 @@
+<img src="..." onmouseover="this.width='someWidth'; this.height='someHeight'" 
+		onmouseout="this.width='originalWidth'; this.height='originalHeight'">

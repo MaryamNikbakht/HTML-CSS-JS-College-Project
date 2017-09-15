@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Final Project-Register</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="logincs.css" type="text/css" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js"></script>
+	<script type="text/javascript" src="../js/logout.js"></script>
+	<script>
+		  $(document).ready(function(){
+	
+			
+				var boo = Cookies.get('nameuser');
+				if(boo != "" && boo != null)
+				{
+					$("#showsale").onload =$("#showsale").show();
+					$("#showlogin").onload =$("#showlogin").hide();
+					$("#showlogout").onload =$("#showlogout").show();
+					
+				}
+				else{
+					$("#showsale").onload =$("#showsale").hide();
+					$("#showlogout").onload =$("#showlogout").hide();
+					$("#showlogin").onload =$("#showlogin").show();
+				}
+			 });
+	</script>
+
+</head>
+<body>
+	
+	
+	<header class="headmain">
+	
+		<h1><img src="log2.png" alt="logo" id="imglogo"></h1>
+		
+		<nav id="nav">
+
+			<ul id="navigation">
+
+				<li><a href="../final.index.html">Home</a></li>
+
+			
+				<li><a href="../gallary/gallary.html">Gallery &raquo;</a>
+
+					<ul>
+
+						<li><a href="../gallary/gallary.html">Painting </a></li>
+
+						<li><a href="../gallary/gallary.html">Photography</a></li>
+
+						<li><a href="../gallary/gallary.html">Patina &raquo;</a>
+							<ul>
+
+									<li><a href="../gallary/gallary.html">Mural painting</a></li>
+								   
+									<li><a href="../gallary/gallary.html">Sculpture</a></li>
+
+								
+							</ul>     
+						</li>
+										 
+
+					</ul>             
+
+				</li>
+				<li id="showsale"><a href="../gallary/sale.html">Sale</a></li>
+				<li><a href="../contact/about.html">About</a></li>
+
+				<li><a href="http://patinehart.blogsky.com/1392/01" target="_blank" onclick="alertblog();">Blog</a></li>
+
+				<li><a href="../contact/contact.html">Contact</a></li>
+				<li><a href="../search/search.html">Search</a></li>
+				<li id="showlogin"><a href="login.html">Login</a></li>
+				<li id="showlogout"><a href="#" onclick="logout();">Log out</a></li>
+
+			</ul>
+
+	</nav>
+
+	
+	</header>
+
+	
+
+	<section>
+		
+			<form name="form1" action="demo_form1.asp" method="post">	
+				<fieldset>
+					<legend>Login</legend>
+					
+						First Name: <input type="text"  value="Enter your name" name="fistname" id="firstname" 
+							pattern="[a-z]{2,15}" required><br/><br/>
+						Last Name: <input type="text"  value="Enter your last name" name="lastname" id="lastname" 
+							pattern="[a-z]{2,20}" required><br/><br/>
+						Email Address: <input type="email"  value="Enter your Email" name="mail" id="mail" 
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Example: sahar_1231232@mail.com" required><br/><br/>
+						Password: <input type="password"  value="******" name="pass"  id="passreg" 
+							pattern=".{6,}" title="Six or more characters" required><br/><br/>
+						Re-Password: <input type="password"  value="******" name="pass"  id="passregre" 
+							pattern=".{6,}" title="Six or more characters" required><br/><br/>
+						Date Of Birth: <input type="date"  value="" name="date"  id="birthdatereg" required><br/><br/>
+						
+						 <input type="button" value="Sign Up" id="signup"/>
+						 <input type="button" value="Cancel" id="cancel"/>
+					
+				</fieldset>
+			</form>
+			<figure>
+				<img src="../img/scul/boronz.jpg" alt="boronz" id="imginside">
+			</figure>
+		
+		
+		
+	</section>
+
+	
+	<footer>
+			 		 
+				Copyright &copy; Maryam Nikbakht 2016 All Rights Reserved
+				<p id="demo"></p> <script> document.getElementById("demo").innerHTML = Date(); </script>
+			 
+		</footer>
+
+	
+	
+	
+</body>
+</html>

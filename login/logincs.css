@@ -1,0 +1,372 @@
+body{
+		margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	background-color:black;
+	width:1333px;
+	height:600px;
+	font-family: Papyrus, fantasy;
+	
+}
+header h1{
+	width:20%;
+	float:left;
+	height:100%;
+	
+}
+
+header
+{
+	width:100%;
+	height:23%;
+	
+	border-bottom:2px solid white;
+	
+	
+}
+
+
+footer{
+	
+	padding-bottom:10px;
+	padding-top:90px;
+	width:100%;
+	text-align:center;
+	color:white;
+	margin-top:20px;
+	
+}
+
+
+section
+	{
+	margin-bottom:135px;
+	height:87%;
+	width:100%;
+	}
+
+figure{
+	width:175px;
+	height:100px;
+	float:right;
+
+}
+
+#imglogo{
+margin-left:0px;
+	padding-top:opx;
+	width:250px;
+	height:175px;
+	padding-bottom:30px;
+	float:left;
+	
+}
+
+
+#imginside{
+	width:400px;
+	height:562px;
+	position:absolute;
+	top: 158px;
+    right: 0px;
+	left:800px;
+	bottom:0px;
+	z-index:0;
+	padding-top:30px;
+	
+	
+}
+#imginsideclient{
+	width:560px;
+	height:562px;
+	position:absolute;
+	top: 200px;
+    right: 0px;
+	left:900px;
+	bottom:0px;
+	z-index:0;
+	padding-top:30px;
+	margin:60px;
+	
+	
+	
+}
+
+
+section
+	{
+		margin-bottom:100px;
+	height:90%;
+	width:100%;
+	color:white;
+		
+	}
+	
+	form{
+		float:left;
+		padding-top:50px;
+	}
+
+fieldset{
+	padding-top:100px;
+	margin-right:800px;
+	margin-left:30px;
+	font-weight:bold;
+		padding-bottom:100px;
+		padding-left:50px;
+		padding-right:50px;
+	
+}
+
+fieldset legend{
+	font-size:130%;
+}
+
+
+input#signup{
+	font-weight:bold;
+}
+
+input#firstname{
+	margin-left:50px;
+}
+input#lastname{
+	margin-left:50px;
+}
+
+input#user{
+	margin-left:45px;
+}
+
+ input#pass{
+	margin-left:60px;
+}
+ input#log{
+	margin-left:135px;
+}
+ input#reg{
+	margin-left:48px;
+}
+
+ input#passreg{
+	margin-left:60px;
+}
+
+ input#mail{
+	margin-left:22px;
+}
+
+ input#passregre{
+	margin-left:33px;
+}
+ input#birthdatereg{
+	margin-left:20px;
+}
+
+p.visamaster{
+	font-size:70%;
+}
+
+input#clientname{
+	margin-left:125px;
+	
+}
+
+input#birthdate{
+	margin-left:110px;
+	
+}
+input#mailclient{
+	margin-left:110px;
+	
+}
+input#totalincludetaxprint{
+	margin-left:105px;
+	
+}
+input#mastercard{
+	margin-left:72px;
+	
+}
+input#visa{
+	margin-left:100px;
+	
+}
+input#cardnumber{
+	margin-left:125px;
+	
+}
+
+input#expire{
+	margin-left:100px;
+}
+input#bdaymonth{
+	margin-left:40px;
+	
+}
+input#securitynumber{
+	margin-left:80px;
+	
+}
+
+input#nameoncard{
+	margin-left:20px;
+	
+}
+
+#selectcard{
+	margin-left:105px;
+	
+}
+
+
+
+
+
+#nav {
+
+   height:100%;
+    width:78%;
+	
+	float:left;
+    padding:10px;
+	margin-top:55px;
+
+}
+
+ 
+
+ul#navigation {
+margin-top:40px auto;
+	float:right;
+	
+    position:relative;
+
+}
+
+ 
+
+ul#navigation li {
+
+    display:inline;
+    font-size:12px;
+    font-weight:bold;
+    float:left;
+    position:relative;
+    border-top:1px solid #c4dbe7;
+    border-bottom:2px solid #c4dbe7;
+
+}
+
+ 
+
+ul#navigation li a {
+
+    padding:10px 25px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border-right:1px solid #fff;
+    border-left:1px solid #C2C2C2;
+    border-top:1px solid #fff;
+    background: #f5f5f5;
+    -webkit-transition:color 0.2s linear, background 0.2s linear;   
+    -moz-transition:color 0.2s linear, background 0.2s linear;  
+    transition:color 0.2s linear, background 0.2s linear;   
+
+}
+
+ 
+ul#navigation li a:hover {
+	
+    background:#f8f8f8;
+    color:blue;
+
+}
+
+ 
+
+ul#navigation li:hover > a {
+
+    background:#fff;
+
+}
+
+
+/* Drop-Down Navigation */
+
+ul#navigation li:hover > ul
+
+{
+
+/*these 2 styles are very important, 
+
+being the ones which make the drop-down to appear on hover */
+
+    visibility:visible;
+
+    opacity:1;
+
+}
+
+ 
+
+ul#navigation ul, ul#navigation ul li ul {
+
+    list-style: none;
+/*the next 2 styles are very important, 
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
+    transition:opacity 0.2s linear, visibility 0.2s linear;     
+
+}
+
+ 
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+ 
+ul#navigation ul li ul {
+    top: 0;
+   left: 181px; /* strong related to width:180px; from above */
+}
+
+ 
+
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    border-bottom:1px solid #c9c9c9;
+}
+
+ 
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#616161;
+    text-shadow:1px 1px 0px #fff;
+   text-decoration:none;
+    display:inline-block;
+	border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+
+}
+
+p#demo{
+	
+	font-size:70%;
+}

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sale</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="gallarycs.css" type="text/css" media="screen">
+	
+	<!-- <script type="text/javascript" src="../login/loginJs.js"></script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js"></script>
+	 <script type="text/javascript" src="../js/saljs.js"></script> 
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/logout.js"></script>
+		
+
+</head>
+<body >
+	
+	
+	<header class="headmain">
+	
+		<h1><img src="../log2.png" alt="logo" id="imglogo" ></h1>
+		
+		<nav id="nav">
+
+			<ul id="navigation">
+
+				<li><a href="../final.index.html">Home</a></li>
+
+			
+				<li><a href="gallary.html">Gallery &raquo;</a>
+
+					<ul>
+
+						<li><a href="gallary.html">Painting </a></li>
+
+						<li><a href="gallary.html">Photography</a></li>
+
+						<li><a href="gallary.html">Patina &raquo;</a>
+							<ul>
+
+									<li><a href="gallary.html">Mural painting</a></li>
+								   
+									<li><a href="gallary.html">Sculpture</a></li>
+
+								
+							</ul>     
+						</li>
+						
+					 
+
+					</ul>             
+
+				</li>
+				<li><a href="#">Sale</a></li>
+
+				<li><a href="../contact/about.html">About</a></li>
+
+				<li><a href="http://patinehart.blogsky.com/1392/01" target="_blank" onclick="alertblog();">Blog</a></li>
+
+				<li><a href="../contact/contact.html">Contact</a></li>
+				<li><a href="../search/search.html">Search</a></li>
+				
+				<li id="logout"><a href="#" onclick="logout();">Log out</a></li>
+
+			</ul>
+
+	</nav>
+
+	
+	</header>
+
+	
+
+	<section>
+	
+	
+		<div id="last-row-pay">	
+			
+			<h1 id="welcom">
+				Welcome <label id='userwelcome'></label>
+			</h1>
+				
+		</div>	
+	<div id="painting">
+			<h2 class="subject" >Painting</h2>
+		<div id="row1">	
+			<div class="divmargin">
+				<img src="../img/painting/inside1.jpg" alt="painting1" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait1- Pastel Painting - 50*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting1" value="500"/>$ 500
+					</label>
+				</div>
+				<div>
+					<label name="number-select1" id="paint1">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select1" id="sale_paint1">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div class="divmargin">
+				<img src="../img/painting/paint1.jpg" alt="painting2" class="row11">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait2- Pastel Painting - 50*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting2" value="500"/>$ 500
+					</label>
+				</div>
+				<div>
+					<label name="number-select2" id="paint2">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select2" id="sale_paint2">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div class="divmargin">
+				<img src="../img/painting/paint3.jpg" alt="painting3" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait-Collag1-Oil Painting - 100*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting3" value="500"/>$ 1000
+					</label>
+				</div>
+				<div>
+					<label name="number-select3" id="paint3">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select3" id="sale_paint3">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					
+					  </optgroup>
+					</select>
+				</div>
+				
+				
+			</div>
+			<div class="divmargin">
+				<img src="../img/painting/paint4.png" alt="painting4" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jesus- Pastel Painting - 50*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting4" value="500"/>$ 600
+					</label>
+				</div>
+				<div>
+					<label name="number-select4" id="paint4">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select4" id="sale_paint4">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="row2">	
+			<div class="divmargin">
+				<img src="../img/painting/paint2.jpg" alt="painting5" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oil Painting - 50*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting5" value="500"/>$ 500
+					</label>
+				</div>
+				<div>
+					<label name="number-select5" id="paint5">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select5" id="sale_paint5">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div class="divmargin">
+				<img src="../img/painting/paint6.png" alt="painting6" class="row12">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pastel Painting - 50*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting6" value="500"/>$ 500
+					</label>
+				</div>
+				<div>
+					<label name="number-select6" id="paint6">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select6" id="sale_paint6">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div class="divmargin">
+				<img src="../img/painting/paint7.jpg" alt="painting7" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portrait-Collag - Oil Painting - 100*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting7" value="500"/>$ 1000
+					</label>
+				</div>
+				<div>
+					<label name="number-select7" id="paint7">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select7" id="sale_paint7">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+						
+					  </optgroup>
+					</select>
+				</div>
+				
+				
+			</div>
+			<div class="divmargin">
+				<img src="../img/painting/6.jpg" alt="painting8" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shahname - Pastel Painting - 50*70
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="painting8" value="500"/>$ 800
+					</label>
+				</div>
+				<div>
+					<label name="number-select8" id="paint8">Number:&nbsp;&nbsp;</label>
+					 <select name="number-select8" id="sale_paint8">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						
+					</optgroup>
+					</select>
+				</div>
+				
+			</div>
+		</div>
+		
+				
+	</div>		
+		
+	<!--  Patina  -->
+	<!--  Patina  -->
+	<!--  Patina  -->
+	<!--  Patina  -->	
+		
+	<div id="patina">
+		<a name="patina"><h3 class="subject">Patina </h3></a>
+		<div id="row3">	
+			<div>
+				<img src="../img/scul/ang2.jpg" alt="patina1" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina1 - Sculpture 20*40cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina1" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina1" id="pat1">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina1" id="sale_pat1">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div>
+				<img src="../img/scul/boronz.jpg" alt="patina2" class="row11">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina2 - Sculpture 20*40cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina2" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina2" id="pat2">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina2" id="sale_pat2">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div >
+				<img src="../img/scul/sofal.jpg" alt="patina3" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina3 - Sculpture 20*15cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina3" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina3" id="pat3">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina3" id="sale_pat3">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+				
+			</div>
+			<div >
+				<img src="../img/scul/jam.jpg" alt="patina4" class="row11">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina4 - Sculpture 30*50cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina4" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina4" id="pat4">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina4" id="sale_pat4">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="row4">	
+			<div>
+				<img src="../img/scul/ang1.jpg" alt="patina5" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina5 - Sculpture 20*30cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina5" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina5" id="pat5">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina5" id="sale_pat5">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div>
+				<img src="../img/scul/gav.jpg" alt="patina6" class="row12">
+				
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina6 - Sculpture 40*20cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina6" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina6" id="pat6">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina6" id="sale_pat6">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+			<div >
+				<img src="../img/scul/gavazn.jpg" alt="patina7" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina7 - Sculpture 20*30cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina7" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina7" id="pat7">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina7" id="sale_pat7">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+				
+			</div>
+			<div >
+				<img src="../img/scul/sofal2.jpg" alt="patina8" class="row12">
+				<h4 class="title">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patina8 - Sculpture 20*10cm
+				</h4>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="patina8" value="500"/>$ 100
+					</label>
+				</div>
+				<div>
+					<label name="number-patina8" id="pat8">Number:&nbsp;&nbsp;</label>
+					 <select name="number-patina8" id="sale_pat8">
+					    <optgroup label="Number">
+					    <option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					  </optgroup>
+					</select>
+				</div>
+				
+			</div>
+		</div>
+				
+					
+					
+	</div>
+	<div id="last-row-pay">	
+			
+			<h2 class="subject" >
+						<input type="button" id="add" value="Add To Cart" onclick="calcTotal();" /><br>
+				
+				
+						
+			</h2>
+			
+			
+	</div>
+
+	
+	
+		
+		
+	</section>
+
+	
+		<footer>
+			 		 
+				Copyright &copy; Maryam Nikbakht 2016 All Rights Reserved
+				<p id="demo"></p> <script> document.getElementById("demo").innerHTML = Date(); </script>
+			 
+		</footer>
+
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Final Project-Login</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="logincs.css" type="text/css" media="screen">
+	
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js"></script>
+	 <script type="text/javascript" src="../js/jquery.min.js"></script>
+	  <script type="text/javascript" src="../js/loginjs.js"></script> 
+	  <script type="text/javascript" src="../js/logout.js"></script>
+	
+</head>
+<body>
+	
+	
+	<header class="headmain">
+	
+		<h1><img src="log2.png" alt="logo" id="imglogo" ></h1>
+		
+		<nav id="nav">
+
+			<ul id="navigation">
+
+				<li><a href="../final.index.html">Home</a></li>
+
+			
+				<li><a href="../gallary/gallary.html">Gallery &raquo;</a>
+
+					<ul>
+
+						<li><a href="../gallary/gallary.html">Painting </a></li>
+
+						<li><a href="../gallary/gallary.html">Photography</a></li>
+
+						<li><a href="../gallary/gallary.html">Patina &raquo;</a>
+							<ul>
+
+									<li><a href="../gallary/gallary.html">Mural painting</a></li>
+								   
+									<li><a href="../gallary/gallary.html">Sculpture</a></li>
+
+									
+							</ul>     
+						</li>
+										 
+
+					</ul>             
+
+				</li>
+
+				<li><a href="../contact/about.html">About</a></li>
+
+				<li><a href="http://patinehart.blogsky.com/1392/01" target="_blank" onclick="alertblog();">Blog</a></li>
+
+				<li><a href="../contact/contact.html">Contact</a></li>
+				<li><a href="../search/search.html">Search</a></li>
+				
+				<li><a href="#">Login</a></li>
+
+			</ul>
+
+	</nav>
+
+	
+	</header>
+
+	
+
+	<section>
+		
+			<form name="form1">	
+				<fieldset>
+					<legend>Login</legend>
+					
+						User Name: <input type="text"  name="user" id="user" autofocus required><br/><br/>
+						Password: <input type="password"  name="pass" id="pass"><br/><br/>
+						<label id="test"></label>
+						
+						<input type="button" value="Login" id="log" onclick="logon(); checkForm();"><br/><br/>
+						New in site?<a href="register.html"> <input type="button" value="Click here" id="reg"/></a>
+					
+				</fieldset>
+			</form>
+			<figure>
+				<img src="../img/scul/ang2.jpg" alt="angel" id="imginside">
+			</figure>
+		
+		
+		
+	</section>
+
+	
+		<footer>
+			 		 
+				Copyright &copy; Maryam Nikbakht 2016 All Rights Reserved
+				<p id="demo"></p> <script> document.getElementById("demo").innerHTML = Date(); </script>
+			 
+		</footer>
+
+	
+	
+	
+</body>
+</html>
